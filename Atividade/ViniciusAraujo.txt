@@ -1,0 +1,80 @@
+1 - Fazer um programa em C que pergunta um valor em metros e 
+imprime o correspondente em decímetros, centímetros e milímetros.
+
+int main() {
+	float m, dm, cm, mm;
+	
+	printf("Digite o seu valor em metros: ");
+	scanf("%f", &m);
+	
+	dm = m * 10;
+	cm = dm * 10;
+	mm =  cm * 10;
+
+	printf("O valor digitado em Metros(m) foi: %.1f\n", m);
+	printf("O valor da conversao para Decimentros(dm) sera de: %.1f\n", dm);
+	printf("O valor da conversao para Centimentros(cm) sera de: %.1f\n", cm);
+	printf("O valor da conversao para Milimetros(mm) sera de: %.1f\n", mm);
+	
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+2. Peça a base e a altura de um Triângulo e calcule sua área. 
+
+int main() {
+	float base, alt, area;
+	
+	printf("Digite a base do seu triangulo: ");
+	scanf("%f", &base);
+	
+	printf("Digite a altura do seu triangulo: ");
+	scanf("%f", &alt);
+	
+	area = (base * alt) / 2;
+	
+	printf("A area do seu triangulo sera de: %.1f", area);
+	
+	return 0;
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+3. Escreva um programa que peça a temperatura em graus Celsius e retorne em graus Fahrenheint e Kelvin.
+
+int main() {
+	float c, f, k;
+	
+	printf("Digite a temperatura em Celsius(C): ");
+	scanf("%f", &c);
+	
+	f = 1.8 * c + 32;
+	k = c + 273;
+	
+	printf("A temperatura digitada foi: %.1fC \n", c);
+	printf("A temperatura convertida para Fahrenheint sera de: %.1fF \n", f);
+	printf("A temperatura convertida para Kelvin sera de: %.1fK \n", k);
+	
+	return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+4. Escreva um programa que calcule o volume de uma esfera. Defina PI como constante e peça o raio ao usuário.
+
+#define PI 3.14
+
+int main() {
+	float volume, raio, area;
+	
+	printf("Digite o raio de uma esfera: ");
+	scanf("%f", &raio);
+	
+	volume = (4 * PI * (raio*raio*raio)) / 3;
+	
+	printf("O valor do raio digitado para calcular o volume da esfera e: %.1f\n", raio);
+	printf("O valor do volume da esfera sera de: %.1f", volume);
+	
+	return 0;
+}
